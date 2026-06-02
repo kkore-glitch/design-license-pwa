@@ -1,0 +1,10 @@
+{
+  "name": "design-license-pwa",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check:data": "/Users/kkore/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/check_questions.py",
+    "build:data": "/Users/kkore/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_questions.py"
+  }
+}
