@@ -1,9 +1,11 @@
 const DATA_URL = "src/data/questions.json";
 const STORE_KEY = "design-license-pwa-progress-v1";
 const SESSION_KEY = "design-license-pwa-session-v1";
+const THEME_KEY = "design-license-pwa-theme-v1";
 const CHOICE_LABELS = ["A", "B", "C", "D"];
 
 const app = document.getElementById("app");
+const themeColor = document.querySelector('meta[name="theme-color"]');
 
 let bank = null;
 let state = {
@@ -11,8 +13,11 @@ let state = {
   progress: loadProgress(),
   session: loadSession(),
   search: "",
-  chapterFilter: "all"
+  chapterFilter: "all",
+  theme: loadTheme()
 };
+
+applyTheme(state.theme);
 
 function loadProgress() {
   try {
@@ -37,6 +42,24 @@ function loadSession() {
 function saveSession() {
   if (state.session) localStorage.setItem(SESSION_KEY, JSON.stringify(state.session));
   else localStorage.removeItem(SESSION_KEY);
+}
+
+function loadTheme() {
+  const stored = localStorage.getItem(THEME_KEY);
+  if (stored === "light" || stored === "dark") return stored;
+  return window.matchMedia?.("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+}
+
+function applyTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  if (themeColor) themeColor.setAttribute("content", theme === "dark" ? "#141915" : "#f7f4ea");
+}
+
+function toggleTheme() {
+  state.theme = state.theme === "dark" ? "light" : "dark";
+  localStorage.setItem(THEME_KEY, state.theme);
+  applyTheme(state.theme);
+  render();
 }
 
 function byId(id) {
@@ -224,6 +247,7 @@ function timerLabel(session) {
 }
 
 function header() {
+  const isDark = state.theme === "dark";
   return `
     <header class="topbar">
       <div class="topbar-inner">
@@ -231,9 +255,14 @@ function header() {
           <p class="eyebrow">12600 乙級</p>
           <h1>室內裝修工程管理題庫</h1>
         </div>
-        <div class="source-note">
-          ${bank.meta.questionCount} 題<br />
-          A12 公開題庫
+        <div class="top-actions">
+          <div class="source-note">
+            ${bank.meta.questionCount} 題<br />
+            A12 公開題庫
+          </div>
+          <button class="theme-toggle" data-action="toggle-theme" aria-label="切換${isDark ? "日間" : "夜間"}模式">
+            <span>${isDark ? "日間" : "夜間"}</span>
+          </button>
         </div>
       </div>
     </header>
@@ -280,6 +309,11 @@ function renderMock() {
         <p class="eyebrow">主流程</p>
         <h2 class="hero-title">80 題模擬測驗</h2>
         <p class="hero-copy">每次從可直接作答的題目中抽 80 題。複選題會要求選出全部正確選項，交卷後可查看錯題與章節分布。</p>
+        <div class="quick-strip" aria-label="目前題庫狀態">
+          <span>${ready} 題可抽考</span>
+          <span>${wrong} 題待複習</span>
+          <span>${saved} 題收藏</span>
+        </div>
         <div class="actions">
           <button class="btn primary" data-action="start-mock">開始 80 題</button>
           <button class="btn" data-action="start-random">20 題練習</button>
@@ -305,7 +339,7 @@ function renderMock() {
           const count = bank.questions.filter((question) => question.chapter === chapter.name).length;
           return `<button class="chapter-row" data-chapter="${chapter.name}">
             <span><strong>${chapter.id} ${chapter.name}</strong><span>${count} 題可練</span></span>
-            <span>開始</span>
+            <span class="row-action">開始</span>
           </button>`;
         })
         .join("")}
@@ -404,7 +438,7 @@ function renderProgress() {
         .map(
           (chapter) => `<div class="chapter-row">
             <span><strong>${chapter.id} ${chapter.name}</strong><span>${chapter.done} / ${chapter.total} 題已練</span></span>
-            <span>${chapter.total ? Math.round((chapter.done / chapter.total) * 100) : 0}%</span>
+            <span class="row-action">${chapter.total ? Math.round((chapter.done / chapter.total) * 100) : 0}%</span>
           </div>`
         )
         .join("")}
@@ -548,6 +582,7 @@ function bindGlobalEvents() {
       const action = button.dataset.action;
       if (action === "start-mock") startMock();
       if (action === "start-random") startRandom();
+      if (action === "toggle-theme") toggleTheme();
       if (action === "practice-filtered") startQuestionList("篩選題庫練習", visibleQuestions());
       if (action === "practice-wrong") startQuestionList("錯題重練", wrongQuestions());
       if (action === "practice-saved") startQuestionList("收藏題練習", savedQuestions());
@@ -618,7 +653,10 @@ fetch(DATA_URL)
     bank = payload;
     render();
     if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("sw.js").catch(() => {});
+      navigator.serviceWorker
+        .register("sw.js")
+        .then((registration) => registration.update())
+        .catch(() => {});
     }
     setInterval(() => {
       if (state.session?.timeLimitSeconds && !state.session.finishedAt) render();
