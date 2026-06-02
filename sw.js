@@ -1,4 +1,4 @@
-const CACHE_NAME = "design-license-pwa-v3";
+const CACHE_NAME = "design-license-pwa-v4";
 const ASSETS = [
   "./",
   "./index.html",
@@ -6,7 +6,7 @@ const ASSETS = [
   "./assets/icon.svg",
   "./src/styles.css?v=20260603",
   "./src/app.js?v=20260603",
-  "./src/data/questions.json"
+  "./src/data/questions.json?v=20260603-text"
 ];
 
 self.addEventListener("install", (event) => {

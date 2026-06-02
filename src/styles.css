@@ -518,6 +518,27 @@ select:focus-visible {
   line-height: 1.65;
 }
 
+.answer-line {
+  margin-top: 8px;
+  font-weight: 800;
+}
+
+.explanation-block {
+  margin-top: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px;
+  background: color-mix(in srgb, var(--panel) 75%, var(--panel-soft));
+}
+
+.explanation-block span {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--accent-dark);
+  font-size: 12px;
+  font-weight: 900;
+}
+
 .answer-box.good {
   border-left-color: var(--good);
 }

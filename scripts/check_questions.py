@@ -12,6 +12,12 @@ def normalize_key(text: str) -> str:
     return "".join(text.split()).replace("，", ",").replace("。", ".")
 
 
+def has_cjk_split_space(text: str) -> bool:
+    import re
+
+    return bool(re.search(r"[\u4e00-\u9fff]\s+[\u4e00-\u9fff]", text))
+
+
 def main() -> None:
     payload = json.loads(QUESTIONS_JSON.read_text(encoding="utf-8"))
     questions = payload["questions"]
@@ -31,6 +37,11 @@ def main() -> None:
             errors.append(f"{item['id']} empty question")
         if any(not choice.strip() for choice in item["choices"]):
             errors.append(f"{item['id']} empty choice")
+        if has_cjk_split_space(item["question"]):
+            errors.append(f"{item['id']} CJK split space in question")
+        for choice in item["choices"]:
+            if has_cjk_split_space(choice):
+                errors.append(f"{item['id']} CJK split space in choice")
 
     duplicates = [key for key, count in seen.items() if count > 1]
     chapter_counts = Counter(item["chapter"] for item in questions)

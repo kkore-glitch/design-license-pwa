@@ -1,4 +1,4 @@
-const DATA_URL = "src/data/questions.json";
+const DATA_URL = "src/data/questions.json?v=20260603-text";
 const STORE_KEY = "design-license-pwa-progress-v1";
 const SESSION_KEY = "design-license-pwa-session-v1";
 const THEME_KEY = "design-license-pwa-theme-v1";
@@ -495,16 +495,7 @@ function renderSession() {
           })
           .join("")}
       </div>
-      ${
-        session.submitted
-          ? `<div class="answer-box ${result.correct ? "good" : "bad"}">
-              <strong>${result.correct ? "作答正確" : "作答錯誤"}</strong><br />
-              ${escapeHtml(question.explanation)}
-            </div>`
-          : isMulti
-            ? `<div class="answer-box">這題是複選。請選出所有正確選項後送出。</div>`
-            : ""
-      }
+      ${answerPanel(question, session, result, isMulti)}
       <div class="session-actions">
         ${
           session.submitted
@@ -558,6 +549,21 @@ function renderResult() {
     <div class="section-title"><h2>本回錯題</h2><span>${wrong.length} 題</span></div>
     ${wrong.length ? `<section class="question-list">${wrong.map(questionLine).join("")}</section>` : `<div class="empty-state">本回沒有錯題。</div>`}
   `);
+}
+
+function answerPanel(question, session, result, isMulti) {
+  if (!session.submitted) {
+    return isMulti ? `<div class="answer-box">這題是複選。請選出所有正確選項後送出。</div>` : "";
+  }
+  const answerText = question.answerIndices.map((index) => `${CHOICE_LABELS[index]} ${question.choices[index]}`).join("、");
+  const explanation = question.explanation
+    ? `<div class="explanation-block"><span>答案重點</span>${escapeHtml(question.explanation.replace(/^答案重點：/, ""))}</div>`
+    : "";
+  return `<div class="answer-box ${result.correct ? "good" : "bad"}">
+    <strong>${result.correct ? "作答正確" : "作答錯誤"}</strong>
+    <div class="answer-line">正解：${escapeHtml(answerText)}</div>
+    ${explanation}
+  </div>`;
 }
 
 function escapeHtml(value) {
