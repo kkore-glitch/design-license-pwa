@@ -1,4 +1,5 @@
-const CACHE_NAME = "design-license-pwa-v7";
+const CACHE_NAME = "design-license-pwa-v8";
+const QUESTION_IMAGE_VERSION = "20260603-figfix";
 const QUESTION_IMAGE_ASSETS = [
   "./assets/questions/12600-A12-001.png",
   "./assets/questions/12600-A12-004.png",
@@ -45,7 +46,7 @@ const QUESTION_IMAGE_ASSETS = [
   "./assets/questions/12600-A12-079.png",
   "./assets/questions/12600-A12-095.png",
   "./assets/questions/12600-A12-305.png"
-];
+].map((path) => `${path}?v=${QUESTION_IMAGE_VERSION}`);
 
 const ASSETS = [
   "./",
@@ -53,7 +54,7 @@ const ASSETS = [
   "./manifest.webmanifest",
   "./assets/icon.svg",
   "./src/styles.css?v=20260603-focus",
-  "./src/app.js?v=20260603-random",
+  "./src/app.js?v=20260603-figfix",
   "./src/data/questions.json?v=20260603-focus"
 ].concat(QUESTION_IMAGE_ASSETS);
 

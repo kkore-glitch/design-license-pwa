@@ -1,4 +1,5 @@
 const DATA_URL = "src/data/questions.json?v=20260603-focus";
+const ASSET_VERSION = "20260603-figfix";
 const STORE_KEY = "design-license-pwa-progress-v1";
 const SESSION_KEY = "design-license-pwa-session-v1";
 const THEME_KEY = "design-license-pwa-theme-v1";
@@ -490,7 +491,7 @@ function renderSession() {
         ${session.timeLimitSeconds ? `<span class="pill">剩餘 ${timerLabel(session)}</span>` : ""}
       </div>
       <h2 class="question-text">${escapeHtml(question.question)}</h2>
-      ${question.image ? `<figure class="question-figure"><img src="${escapeHtml(question.image)}" alt="題目圖例" loading="lazy" /></figure>` : ""}
+      ${question.image ? `<figure class="question-figure"><img src="${escapeHtml(`${question.image}?v=${ASSET_VERSION}`)}" alt="題目圖例" loading="lazy" /></figure>` : ""}
       <div class="choice-grid">
         ${question.choices
           .map((choice, index) => {
