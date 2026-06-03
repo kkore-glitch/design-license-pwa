@@ -102,10 +102,11 @@ function availableForMock() {
 }
 
 function startSession(mode, questions, title, timed = false) {
+  const orderedQuestions = questions.length > 1 ? shuffle(questions) : questions;
   state.session = {
     mode,
     title,
-    ids: questions.map((question) => question.id),
+    ids: orderedQuestions.map((question) => question.id),
     index: 0,
     selected: [],
     submitted: false,
