@@ -5,7 +5,7 @@
     "version": "A12",
     "sourcePdf": "https://owinform.wdasec.gov.tw/owInform/DLowFile/126002A12.pdf",
     "generatedFrom": "data/raw/126002A12.pdf",
-    "questionCount": 668,
+    "questionCount": 708,
     "chapterCount": 7,
     "notes": "圖片題保留題幹與選項，若 PDF 文字抽取無法呈現圖形，前端會排除於模擬測驗。"
   },
@@ -79,11 +79,11 @@
       "answerIndices": [
         2
       ],
-      "explanation": "答案重點：此題須配合圖形或符號判讀；官方 A12 題庫給出的對應答案是「剖面標記」。若要複習這題，請對照官方 PDF 的圖例位置一起看。",
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「左圖符號係為」，在官方 A12 題庫中對應為「剖面標記」。",
       "isHistorical": false,
       "year": null,
-      "image": null,
-      "needsImage": true
+      "image": "assets/questions/12600-A12-001.png",
+      "needsImage": false
     },
     {
       "id": "12600-A12-002",
@@ -151,11 +151,11 @@
       "answerIndices": [
         2
       ],
-      "explanation": "答案重點：此題須配合圖形或符號判讀；官方 A12 題庫給出的對應答案是「中心線」。若要複習這題，請對照官方 PDF 的圖例位置一起看。",
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「施工圖面常用文字簡寫符號中代表」，在官方 A12 題庫中對應為「中心線」。",
       "isHistorical": false,
       "year": null,
-      "image": null,
-      "needsImage": true
+      "image": "assets/questions/12600-A12-004.png",
+      "needsImage": false
     },
     {
       "id": "12600-A12-005",
@@ -175,11 +175,11 @@
       "answerIndices": [
         2
       ],
-      "explanation": "答案重點：此題須配合圖形或符號判讀；官方 A12 題庫給出的對應答案是「鬆軟之保溫吸音材疊席類」。若要複習這題，請對照官方 PDF 的圖例位置一起看。",
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「材料構造圖例中代表」，在官方 A12 題庫中對應為「鬆軟之保溫吸音材疊席類」。",
       "isHistorical": false,
       "year": null,
-      "image": null,
-      "needsImage": true
+      "image": "assets/questions/12600-A12-005.png",
+      "needsImage": false
     },
     {
       "id": "12600-A12-006",
@@ -199,11 +199,11 @@
       "answerIndices": [
         1
       ],
-      "explanation": "答案重點：此題須配合圖形或符號判讀；官方 A12 題庫給出的對應答案是「排水管」。若要複習這題，請對照官方 PDF 的圖例位置一起看。",
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「給排水及衛生設備符號中，代表」，在官方 A12 題庫中對應為「排水管」。",
       "isHistorical": false,
       "year": null,
-      "image": null,
-      "needsImage": true
+      "image": "assets/questions/12600-A12-006.png",
+      "needsImage": false
     },
     {
       "id": "12600-A12-007",
@@ -247,11 +247,11 @@
       "answerIndices": [
         1
       ],
-      "explanation": "答案重點：此題須配合圖形或符號判讀；官方 A12 題庫給出的對應答案是「電燈分電盤」。若要複習這題，請對照官方 PDF 的圖例位置一起看。",
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「在電氣設備圖中此符號代表配電系統之」，在官方 A12 題庫中對應為「電燈分電盤」。",
       "isHistorical": false,
       "year": null,
-      "image": null,
-      "needsImage": true
+      "image": "assets/questions/12600-A12-008.png",
+      "needsImage": false
     },
     {
       "id": "12600-A12-009",
@@ -319,11 +319,11 @@
       "answerIndices": [
         2
       ],
-      "explanation": "答案重點：此題須配合圖形或符號判讀；官方 A12 題庫給出的對應答案是「電視天線用管線」。若要複習這題，請對照官方 PDF 的圖例位置一起看。",
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「在電信設備圖中，代表」，在官方 A12 題庫中對應為「電視天線用管線」。",
       "isHistorical": false,
       "year": null,
-      "image": null,
-      "needsImage": true
+      "image": "assets/questions/12600-A12-011.png",
+      "needsImage": false
     },
     {
       "id": "12600-A12-012",
@@ -343,11 +343,11 @@
       "answerIndices": [
         0
       ],
-      "explanation": "答案重點：此題須配合圖形或符號判讀；官方 A12 題庫給出的對應答案是「電信管線下行」。若要複習這題，請對照官方 PDF 的圖例位置一起看。",
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「在電信等設備圖中，代表」，在官方 A12 題庫中對應為「電信管線下行」。",
       "isHistorical": false,
       "year": null,
-      "image": null,
-      "needsImage": true
+      "image": "assets/questions/12600-A12-012.png",
+      "needsImage": false
     },
     {
       "id": "12600-A12-013",
@@ -367,11 +367,11 @@
       "answerIndices": [
         2
       ],
-      "explanation": "答案重點：此題須配合圖形或符號判讀；官方 A12 題庫給出的對應答案是「蒸汽管」。若要複習這題，請對照官方 PDF 的圖例位置一起看。",
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「在給排水等設備圖中，代表」，在官方 A12 題庫中對應為「蒸汽管」。",
       "isHistorical": false,
       "year": null,
-      "image": null,
-      "needsImage": true
+      "image": "assets/questions/12600-A12-013.png",
+      "needsImage": false
     },
     {
       "id": "12600-A12-014",
@@ -391,11 +391,11 @@
       "answerIndices": [
         2
       ],
-      "explanation": "答案重點：此題須配合圖形或符號判讀；官方 A12 題庫給出的對應答案是「壁式白熾燈」。若要複習這題，請對照官方 PDF 的圖例位置一起看。",
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「電氣設備圖中，代表」，在官方 A12 題庫中對應為「壁式白熾燈」。",
       "isHistorical": false,
       "year": null,
-      "image": null,
-      "needsImage": true
+      "image": "assets/questions/12600-A12-014.png",
+      "needsImage": false
     },
     {
       "id": "12600-A12-015",
@@ -415,11 +415,11 @@
       "answerIndices": [
         3
       ],
-      "explanation": "答案重點：此題須配合圖形或符號判讀；官方 A12 題庫給出的對應答案是「單地板插座」。若要複習這題，請對照官方 PDF 的圖例位置一起看。",
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「在電氣設備符號中，代表」，在官方 A12 題庫中對應為「單地板插座」。",
       "isHistorical": false,
       "year": null,
-      "image": null,
-      "needsImage": true
+      "image": "assets/questions/12600-A12-015.png",
+      "needsImage": false
     },
     {
       "id": "12600-A12-016",
@@ -466,7 +466,7 @@
       "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「材料構造圖例表示」，在官方 A12 題庫中對應為「磚牆」。",
       "isHistorical": false,
       "year": null,
-      "image": null,
+      "image": "assets/questions/12600-A12-017.png",
       "needsImage": false
     },
     {
@@ -487,11 +487,11 @@
       "answerIndices": [
         2
       ],
-      "explanation": "答案重點：此題須配合圖形或符號判讀；官方 A12 題庫給出的對應答案是「截斷線」。若要複習這題，請對照官方 PDF 的圖例位置一起看。",
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「在圖樣圖示準則中左圖符號是」，在官方 A12 題庫中對應為「截斷線」。",
       "isHistorical": false,
       "year": null,
-      "image": null,
-      "needsImage": true
+      "image": "assets/questions/12600-A12-018.png",
+      "needsImage": false
     },
     {
       "id": "12600-A12-019",
@@ -511,11 +511,11 @@
       "answerIndices": [
         2
       ],
-      "explanation": "答案重點：此題須配合圖形或符號判讀；官方 A12 題庫給出的對應答案是「消防水管」。若要複習這題，請對照官方 PDF 的圖例位置一起看。",
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「在設備圖說標準圖例中，下圖符號表示為何」，在官方 A12 題庫中對應為「消防水管」。",
       "isHistorical": false,
       "year": null,
-      "image": null,
-      "needsImage": true
+      "image": "assets/questions/12600-A12-019.png",
+      "needsImage": false
     },
     {
       "id": "12600-A12-020",
@@ -538,7 +538,7 @@
       "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「在電氣設備圖說標準圖例中表示」，在官方 A12 題庫中對應為「電燈總配電盤」。",
       "isHistorical": false,
       "year": null,
-      "image": null,
+      "image": "assets/questions/12600-A12-020.png",
       "needsImage": false
     },
     {
@@ -583,11 +583,11 @@
       "answerIndices": [
         3
       ],
-      "explanation": "答案重點：此題須配合圖形或符號判讀；官方 A12 題庫給出的對應答案是「飲水管」。若要複習這題，請對照官方 PDF 的圖例位置一起看。",
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「在給排水工程之圖說標準中，下圖符號代表飲水用之」，在官方 A12 題庫中對應為「飲水管」。",
       "isHistorical": false,
       "year": null,
-      "image": null,
-      "needsImage": true
+      "image": "assets/questions/12600-A12-022.png",
+      "needsImage": false
     },
     {
       "id": "12600-A12-023",
@@ -775,11 +775,11 @@
       "answerIndices": [
         2
       ],
-      "explanation": "答案重點：此題須配合圖形或符號判讀；官方 A12 題庫給出的對應答案是「通氣管」。若要複習這題，請對照官方 PDF 的圖例位置一起看。",
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「下圖給排水及衛生設備符號表示為何」，在官方 A12 題庫中對應為「通氣管」。",
       "isHistorical": false,
       "year": null,
-      "image": null,
-      "needsImage": true
+      "image": "assets/questions/12600-A12-030.png",
+      "needsImage": false
     },
     {
       "id": "12600-A12-031",
@@ -799,11 +799,11 @@
       "answerIndices": [
         1
       ],
-      "explanation": "答案重點：此題須配合圖形或符號判讀；官方 A12 題庫給出的對應答案是「警報發信器」。若要複習這題，請對照官方 PDF 的圖例位置一起看。",
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「左圖之消防符號在消防設備圖中代表」，在官方 A12 題庫中對應為「警報發信器」。",
       "isHistorical": false,
       "year": null,
-      "image": null,
-      "needsImage": true
+      "image": "assets/questions/12600-A12-031.png",
+      "needsImage": false
     },
     {
       "id": "12600-A12-032",
@@ -823,11 +823,11 @@
       "answerIndices": [
         2
       ],
-      "explanation": "答案重點：此題須配合圖形或符號判讀；官方 A12 題庫給出的對應答案是「電信管線上下行」。若要複習這題，請對照官方 PDF 的圖例位置一起看。",
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「左圖之電信、電鈴、電視設備符號在設備中代表」，在官方 A12 題庫中對應為「電信管線上下行」。",
       "isHistorical": false,
       "year": null,
-      "image": null,
-      "needsImage": true
+      "image": "assets/questions/12600-A12-032.png",
+      "needsImage": false
     },
     {
       "id": "12600-A12-033",
@@ -847,11 +847,11 @@
       "answerIndices": [
         1
       ],
-      "explanation": "答案重點：此題須配合圖形或符號判讀；官方 A12 題庫給出的對應答案是「普通窗」。若要複習這題，請對照官方 PDF 的圖例位置一起看。",
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「建築圖符號及圖例，下圖之門窗編號符號代表為何」，在官方 A12 題庫中對應為「普通窗」。",
       "isHistorical": false,
       "year": null,
-      "image": null,
-      "needsImage": true
+      "image": "assets/questions/12600-A12-033.png",
+      "needsImage": false
     },
     {
       "id": "12600-A12-034",
@@ -991,11 +991,11 @@
       "answerIndices": [
         3
       ],
-      "explanation": "答案重點：此題須配合圖形或符號判讀；官方 A12 題庫給出的對應答案是「D19」。若要複習這題，請對照官方 PDF 的圖例位置一起看。",
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「此符號『 #』代表規格號碼；在竹節鋼筋材料 #6 代表竹節鋼筋稱號為」，在官方 A12 題庫中對應為「D19」。",
       "isHistorical": false,
       "year": null,
       "image": null,
-      "needsImage": true
+      "needsImage": false
     },
     {
       "id": "12600-A12-040",
@@ -1070,6 +1070,78 @@
       "needsImage": false
     },
     {
+      "id": "12600-A12-043",
+      "number": 43,
+      "localNumber": 43,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "圖說判讀",
+      "question": "本立體圖的正視圖為",
+      "choices": [
+        "圖中①",
+        "圖中②",
+        "圖中③",
+        "圖中④"
+      ],
+      "answerIndex": 1,
+      "answerIndices": [
+        1
+      ],
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「本立體圖的正視圖為」，在官方 A12 題庫中對應為「圖中②」。",
+      "isHistorical": false,
+      "year": null,
+      "image": "assets/questions/12600-A12-043.png",
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-044",
+      "number": 44,
+      "localNumber": 44,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "圖說判讀",
+      "question": "本立體圖的右側視圖為",
+      "choices": [
+        "圖中①",
+        "圖中②",
+        "圖中③",
+        "圖中④"
+      ],
+      "answerIndex": 1,
+      "answerIndices": [
+        1
+      ],
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「本立體圖的右側視圖為」，在官方 A12 題庫中對應為「圖中②」。",
+      "isHistorical": false,
+      "year": null,
+      "image": "assets/questions/12600-A12-044.png",
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-045",
+      "number": 45,
+      "localNumber": 45,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "圖說判讀",
+      "question": "左圖為已知上圖為俯視圖及下圖為正視圖，請選擇符合正確之右側視圖",
+      "choices": [
+        "圖中①",
+        "圖中②",
+        "圖中③",
+        "圖中④"
+      ],
+      "answerIndex": 3,
+      "answerIndices": [
+        3
+      ],
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「左圖為已知上圖為俯視圖及下圖為正視圖，請選擇符合正確之右側視圖」，在官方 A12 題庫中對應為「圖中④」。",
+      "isHistorical": false,
+      "year": null,
+      "image": "assets/questions/12600-A12-045.png",
+      "needsImage": false
+    },
+    {
       "id": "12600-A12-046",
       "number": 46,
       "localNumber": 46,
@@ -1135,11 +1207,11 @@
       "answerIndices": [
         2
       ],
-      "explanation": "答案重點：此題須配合圖形或符號判讀；官方 A12 題庫給出的對應答案是「一塊磚的長度」。若要複習這題，請對照官方 PDF 的圖例位置一起看。",
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「左圖之建築圖例是表示此磚牆的厚度為」，在官方 A12 題庫中對應為「一塊磚的長度」。",
       "isHistorical": false,
       "year": null,
-      "image": null,
-      "needsImage": true
+      "image": "assets/questions/12600-A12-048.png",
+      "needsImage": false
     },
     {
       "id": "12600-A12-049",
@@ -1210,7 +1282,33 @@
       "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「構造物之剖面圖，如右圖上層細線是表示」，在官方 A12 題庫中對應為「粉刷」。",
       "isHistorical": false,
       "year": null,
-      "image": null,
+      "image": "assets/questions/12600-A12-051.png",
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-052",
+      "number": 52,
+      "localNumber": 52,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "圖說判讀",
+      "question": "依 CNS11567 之 A1042 建築圖符號及圖例規定，下列哪些屬於材料、構造圖例？",
+      "choices": [
+        "圖中①",
+        "圖中②",
+        "圖中③",
+        "圖中④"
+      ],
+      "answerIndex": 0,
+      "answerIndices": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「依 CNS11567 之 A1042 建築圖符號及圖例規定，下列哪些屬於材料、構造圖例」，在官方 A12 題庫中對應為「圖中①、圖中②、圖中④」。",
+      "isHistorical": false,
+      "year": null,
+      "image": "assets/questions/12600-A12-052.png",
       "needsImage": false
     },
     {
@@ -1233,11 +1331,37 @@
         1,
         3
       ],
-      "explanation": "答案重點：此題須配合圖形或符號判讀；官方 A12 題庫給出的對應答案是「表示鋼筋混凝土、表示網、表示石材」。若要複習這題，請對照官方 PDF 的圖例位置一起看。",
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「下列圖例表示哪些為正確」，在官方 A12 題庫中對應為「表示鋼筋混凝土、表示網、表示石材」。",
       "isHistorical": false,
       "year": null,
-      "image": null,
-      "needsImage": true
+      "image": "assets/questions/12600-A12-053.png",
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-054",
+      "number": 54,
+      "localNumber": 54,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "圖說判讀",
+      "question": "依 CNS11567 之 A1042 建築設備圖表示法規定，下列哪些屬於消防設備符號？",
+      "choices": [
+        "圖中①",
+        "圖中②",
+        "圖中③",
+        "圖中④"
+      ],
+      "answerIndex": 0,
+      "answerIndices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「依 CNS11567 之 A1042 建築設備圖表示法規定，下列哪些屬於消防設備符號」，在官方 A12 題庫中對應為「圖中①、圖中②、圖中③」。",
+      "isHistorical": false,
+      "year": null,
+      "image": "assets/questions/12600-A12-054.png",
+      "needsImage": false
     },
     {
       "id": "12600-A12-055",
@@ -1262,7 +1386,7 @@
       "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「依中華民國國家標準 CNS11567 之 A1042 建築設備圖表示法規定，下列設備符號表示名稱哪些為不正確」，在官方 A12 題庫中對應為「表示電燈總配電盤、表示消防栓箱、表示自動灑水送水口」。",
       "isHistorical": false,
       "year": null,
-      "image": null,
+      "image": "assets/questions/12600-A12-055.png",
       "needsImage": false
     },
     {
@@ -1287,7 +1411,32 @@
       "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「依中華民國國家標準 CNS11567 之 A1042 建築設備圖表示法規定，下列設備符號表示何者不正確」，在官方 A12 題庫中對應為「表示水霧自動灑水頭、表示接地型單地板插座」。",
       "isHistorical": false,
       "year": null,
-      "image": null,
+      "image": "assets/questions/12600-A12-056.png",
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-057",
+      "number": 57,
+      "localNumber": 57,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "圖說判讀",
+      "question": "依中華民國國家標準 CNS11567 之 A1042 建築設備圖表示法規定，下列哪些符號為電氣設備符號？",
+      "choices": [
+        "圖中①",
+        "圖中②",
+        "圖中③",
+        "圖中④"
+      ],
+      "answerIndex": 1,
+      "answerIndices": [
+        1,
+        3
+      ],
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「依中華民國國家標準 CNS11567 之 A1042 建築設備圖表示法規定，下列哪些符號為電氣設備符號」，在官方 A12 題庫中對應為「圖中②、圖中④」。",
+      "isHistorical": false,
+      "year": null,
+      "image": "assets/questions/12600-A12-057.png",
       "needsImage": false
     },
     {
@@ -1313,7 +1462,186 @@
       "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「依中華民國國家標準 CNS11567 之 A1042 建築設備圖表示法規定，下列電氣設備符號表示名稱哪些為正確」，在官方 A12 題庫中對應為「表示接地、表示風扇出線口、表示地板線槽地線盒」。",
       "isHistorical": false,
       "year": null,
-      "image": null,
+      "image": "assets/questions/12600-A12-058.png",
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-059",
+      "number": 59,
+      "localNumber": 59,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "圖說判讀",
+      "question": "依中華民國國家標準 CNS11567 之 A1042 建築設備圖表示法規定，下列哪些符號為空調及機械設備圖例？",
+      "choices": [
+        "圖中①",
+        "圖中②",
+        "圖中③",
+        "圖中④"
+      ],
+      "answerIndex": 0,
+      "answerIndices": [
+        0,
+        3
+      ],
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「依中華民國國家標準 CNS11567 之 A1042 建築設備圖表示法規定，下列哪些符號為空調及機械設備圖例」，在官方 A12 題庫中對應為「圖中①、圖中④」。",
+      "isHistorical": false,
+      "year": null,
+      "image": "assets/questions/12600-A12-059.png",
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-060",
+      "number": 60,
+      "localNumber": 60,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "圖說判讀",
+      "question": "依中華民國國家標準 CNS11567 之 A1042 建築設備圖表示法規定，下列哪些符號為電信、電鈴、電視設備符號？",
+      "choices": [
+        "圖中①",
+        "圖中②",
+        "圖中③",
+        "圖中④"
+      ],
+      "answerIndex": 0,
+      "answerIndices": [
+        0,
+        1
+      ],
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「依中華民國國家標準 CNS11567 之 A1042 建築設備圖表示法規定，下列哪些符號為電信、電鈴、電視設備符...」，在官方 A12 題庫中對應為「圖中①、圖中②」。",
+      "isHistorical": false,
+      "year": null,
+      "image": "assets/questions/12600-A12-060.png",
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-061",
+      "number": 61,
+      "localNumber": 61,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "圖說判讀",
+      "question": "依中華民國國家標準 CNS11567 之 A1042 建築設備圖表示法規定，下列哪些符號為給排水及衛生設備符號？",
+      "choices": [
+        "圖中①",
+        "圖中②",
+        "圖中③",
+        "圖中④"
+      ],
+      "answerIndex": 0,
+      "answerIndices": [
+        0,
+        3
+      ],
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「依中華民國國家標準 CNS11567 之 A1042 建築設備圖表示法規定，下列哪些符號為給排水及衛生設備符號」，在官方 A12 題庫中對應為「圖中①、圖中④」。",
+      "isHistorical": false,
+      "year": null,
+      "image": "assets/questions/12600-A12-061.png",
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-062",
+      "number": 62,
+      "localNumber": 62,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "圖說判讀",
+      "question": "依據 CNS11567-A1042 建築製圖規定，下列哪些為空調及機械設備圖例之符號？",
+      "choices": [
+        "圖中①",
+        "圖中②",
+        "圖中③",
+        "圖中④"
+      ],
+      "answerIndex": 1,
+      "answerIndices": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「依據 CNS11567-A1042 建築製圖規定，下列哪些為空調及機械設備圖例之符號」，在官方 A12 題庫中對應為「圖中②、圖中③、圖中④」。",
+      "isHistorical": false,
+      "year": null,
+      "image": "assets/questions/12600-A12-062.png",
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-063",
+      "number": 63,
+      "localNumber": 63,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "圖說判讀",
+      "question": "依據 CNS11567-A1042 建築製圖規定，下列哪些為電氣設備圖例標準圖例之符號？",
+      "choices": [
+        "圖中①",
+        "圖中②",
+        "圖中③",
+        "圖中④"
+      ],
+      "answerIndex": 0,
+      "answerIndices": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「依據 CNS11567-A1042 建築製圖規定，下列哪些為電氣設備圖例標準圖例之符號」，在官方 A12 題庫中對應為「圖中①、圖中③、圖中④」。",
+      "isHistorical": false,
+      "year": null,
+      "image": "assets/questions/12600-A12-063.png",
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-064",
+      "number": 64,
+      "localNumber": 64,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "圖說判讀",
+      "question": "依據 CNS11567-A1042 建築製圖規定，下列哪些為給排水及衛生設備符號？",
+      "choices": [
+        "圖中①",
+        "圖中②",
+        "圖中③",
+        "圖中④"
+      ],
+      "answerIndex": 0,
+      "answerIndices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「依據 CNS11567-A1042 建築製圖規定，下列哪些為給排水及衛生設備符號」，在官方 A12 題庫中對應為「圖中①、圖中②、圖中③」。",
+      "isHistorical": false,
+      "year": null,
+      "image": "assets/questions/12600-A12-064.png",
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-065",
+      "number": 65,
+      "localNumber": 65,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "圖說判讀",
+      "question": "依據 CNS11567-A1042 建築製圖規定，下列哪些為電信、電鈴、電視設備符號？",
+      "choices": [
+        "圖中①",
+        "圖中②",
+        "圖中③",
+        "圖中④"
+      ],
+      "answerIndex": 1,
+      "answerIndices": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「依據 CNS11567-A1042 建築製圖規定，下列哪些為電信、電鈴、電視設備符號」，在官方 A12 題庫中對應為「圖中②、圖中③、圖中④」。",
+      "isHistorical": false,
+      "year": null,
+      "image": "assets/questions/12600-A12-065.png",
       "needsImage": false
     },
     {
@@ -1337,6 +1665,260 @@
         2
       ],
       "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「依據 CNS11567 -A1042 建築製圖規定，下列哪些建築圖符號及圖例之常用文字簡寫符號為正確」，在官方 A12 題庫中對應為「W：寬度、H：高度、DW：門連窗」。",
+      "isHistorical": false,
+      "year": null,
+      "image": null,
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-067",
+      "number": 67,
+      "localNumber": 67,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "圖說判讀",
+      "question": "依據 CNS11567-A1042 建築製圖規定，哪些為空調及機械設備圖例之符號？",
+      "choices": [
+        "圖中①",
+        "圖中②",
+        "圖中③",
+        "圖中④"
+      ],
+      "answerIndex": 1,
+      "answerIndices": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「依據 CNS11567-A1042 建築製圖規定，哪些為空調及機械設備圖例之符號」，在官方 A12 題庫中對應為「圖中②、圖中③、圖中④」。",
+      "isHistorical": false,
+      "year": null,
+      "image": "assets/questions/12600-A12-067.png",
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-068",
+      "number": 68,
+      "localNumber": 68,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "圖說判讀",
+      "question": "依據 CNS11567-A1042 建築製圖規定，哪些為電氣設備符號？",
+      "choices": [
+        "圖中①",
+        "圖中②",
+        "圖中③",
+        "圖中④"
+      ],
+      "answerIndex": 0,
+      "answerIndices": [
+        0,
+        3
+      ],
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「依據 CNS11567-A1042 建築製圖規定，哪些為電氣設備符號」，在官方 A12 題庫中對應為「圖中①、圖中④」。",
+      "isHistorical": false,
+      "year": null,
+      "image": "assets/questions/12600-A12-068.png",
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-069",
+      "number": 69,
+      "localNumber": 69,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "圖說判讀",
+      "question": "依據 CNS11567-A1042 建築製圖規定，哪些為電信、電鈴、電視設備符號？",
+      "choices": [
+        "圖中①",
+        "圖中②",
+        "圖中③",
+        "圖中④"
+      ],
+      "answerIndex": 0,
+      "answerIndices": [
+        0,
+        2
+      ],
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「依據 CNS11567-A1042 建築製圖規定，哪些為電信、電鈴、電視設備符號」，在官方 A12 題庫中對應為「圖中①、圖中③」。",
+      "isHistorical": false,
+      "year": null,
+      "image": "assets/questions/12600-A12-069.png",
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-070",
+      "number": 70,
+      "localNumber": 70,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "圖說判讀",
+      "question": "依據 CNS11567-A1042 建築製圖規定，哪些為給排水及衛生設備符號？",
+      "choices": [
+        "圖中①",
+        "圖中②",
+        "圖中③",
+        "圖中④"
+      ],
+      "answerIndex": 0,
+      "answerIndices": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「依據 CNS11567-A1042 建築製圖規定，哪些為給排水及衛生設備符號」，在官方 A12 題庫中對應為「圖中①、圖中②、圖中④」。",
+      "isHistorical": false,
+      "year": null,
+      "image": "assets/questions/12600-A12-070.png",
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-071",
+      "number": 71,
+      "localNumber": 71,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "圖說判讀",
+      "question": "依據 CNS11567 -A1042 建築製圖規定，下列哪些建築圖符號及圖例之常用文字簡寫符號為正確？",
+      "choices": [
+        "CL：天花板線",
+        "GL：地盤線",
+        "XL：最大長度",
+        "HL：垂直線"
+      ],
+      "answerIndex": 0,
+      "answerIndices": [
+        0,
+        1
+      ],
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「依據 CNS11567 -A1042 建築製圖規定，下列哪些建築圖符號及圖例之常用文字簡寫符號為正確」，在官方 A12 題庫中對應為「CL：天花板線、GL：地盤線」。",
+      "isHistorical": false,
+      "year": null,
+      "image": null,
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-072",
+      "number": 72,
+      "localNumber": 72,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "圖說判讀",
+      "question": "依據 CNS11567 -A1042 建築製圖規定，有關線條用途種類中，「虛線」之用途為",
+      "choices": [
+        "隱蔽線",
+        "中心線",
+        "配管",
+        "地界線"
+      ],
+      "answerIndex": 0,
+      "answerIndices": [
+        0,
+        2
+      ],
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「依據 CNS11567 -A1042 建築製圖規定，有關線條用途種類中，「虛線」之用途為」，在官方 A12 題庫中對應為「隱蔽線、配管」。",
+      "isHistorical": false,
+      "year": null,
+      "image": null,
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-073",
+      "number": 73,
+      "localNumber": 73,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "圖說判讀",
+      "question": "依據 CNS11567 -A1042 建築製圖規定，下列哪些圖號之英文代號原則為錯誤？",
+      "choices": [
+        "X：結構圖",
+        "G：瓦斯設備圖",
+        "W：污水處理設施圖",
+        "D：電氣設備圖"
+      ],
+      "answerIndex": 0,
+      "answerIndices": [
+        0,
+        3
+      ],
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「依據 CNS11567 -A1042 建築製圖規定，下列哪些圖號之英文代號原則為錯誤」，在官方 A12 題庫中對應為「X：結構圖、D：電氣設備圖」。",
+      "isHistorical": false,
+      "year": null,
+      "image": null,
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-074",
+      "number": 74,
+      "localNumber": 74,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "圖說判讀",
+      "question": "依據 CNS11567 -A1042 建築製圖規定，有關線條用途種類中，「單點線」 之用途為",
+      "choices": [
+        "隱蔽線",
+        "中心線",
+        "地界線",
+        "建築線"
+      ],
+      "answerIndex": 1,
+      "answerIndices": [
+        1,
+        3
+      ],
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「依據 CNS11567 -A1042 建築製圖規定，有關線條用途種類中，「單點線」 之用途為」，在官方 A12 題庫中對應為「中心線、建築線」。",
+      "isHistorical": false,
+      "year": null,
+      "image": null,
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-075",
+      "number": 75,
+      "localNumber": 75,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "圖說判讀",
+      "question": "依據 CNS11567 -A1042 建築製圖規定，下列哪些為建築結構圖基本符號用途中之「構造」符號？",
+      "choices": [
+        "SRC：鋼骨鋼筋混凝土造",
+        "B：磚構造",
+        "F：加強磚造",
+        "W：木構造"
+      ],
+      "answerIndex": 0,
+      "answerIndices": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「依據 CNS11567 -A1042 建築製圖規定，下列哪些為建築結構圖基本符號用途中之「構造」符號」，在官方 A12 題庫中對應為「SRC：鋼骨鋼筋混凝土造、B：磚構造、W：木構造」。",
+      "isHistorical": false,
+      "year": null,
+      "image": null,
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-076",
+      "number": 76,
+      "localNumber": 76,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "圖說判讀",
+      "question": "依據 CNS11567 -A1042 建築製圖規定，下列哪些為「平面詳圖」之比例尺原則？",
+      "choices": [
+        "1/5",
+        "1/10",
+        "1/30",
+        "1/60。 12600 建築物室內裝修工程管理乙級"
+      ],
+      "answerIndex": 0,
+      "answerIndices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "答案重點：此題考 CNS 圖例、建築製圖代號或圖面規則。題幹中的判讀對象是「依據 CNS11567 -A1042 建築製圖規定，下列哪些為「平面詳圖」之比例尺原則」，在官方 A12 題庫中對應為「1/5、1/10、1/30」。",
       "isHistorical": false,
       "year": null,
       "image": null,
@@ -1388,6 +1970,30 @@
       "isHistorical": false,
       "year": null,
       "image": null,
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-079",
+      "number": 79,
+      "localNumber": 3,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "丈量及放樣",
+      "question": "水平管放樣時，管內水面靜止，液面呈曲面狀態，在訂定水面高度時下列何者正確？",
+      "choices": [
+        "圖中①",
+        "圖中②",
+        "圖中③",
+        "圖中④"
+      ],
+      "answerIndex": 0,
+      "answerIndices": [
+        0
+      ],
+      "explanation": "答案重點：題幹問的是「水平管放樣時，管內水面靜止，液面呈曲面狀態，在訂定水面高度時下列何者正確」，官方 A12 題庫中與這個條件對應的答案是「圖中①」。",
+      "isHistorical": false,
+      "year": null,
+      "image": "assets/questions/12600-A12-079.png",
       "needsImage": false
     },
     {
@@ -1768,11 +2374,11 @@
       "answerIndices": [
         0
       ],
-      "explanation": "答案重點：此題須配合圖形或符號判讀；官方 A12 題庫給出的對應答案是「中心線」。若要複習這題，請對照官方 PDF 的圖例位置一起看。",
+      "explanation": "答案重點：題幹問的是「如下圖之放樣符號是表示」，官方 A12 題庫中與這個條件對應的答案是「中心線」。",
       "isHistorical": false,
       "year": null,
-      "image": null,
-      "needsImage": true
+      "image": "assets/questions/12600-A12-095.png",
+      "needsImage": false
     },
     {
       "id": "12600-A12-096",
@@ -1980,6 +2586,110 @@
       "needsImage": false
     },
     {
+      "id": "12600-A12-104",
+      "number": 104,
+      "localNumber": 28,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "丈量及放樣",
+      "question": "下列何者為室内裝修工地常用的定線工具？",
+      "choices": [
+        "墨斗",
+        "鉛錘",
+        "折尺",
+        "水平管"
+      ],
+      "answerIndex": 0,
+      "answerIndices": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "答案重點：此題考施工工具、機具或工序用途。題幹描述的工作是「下列何者為室内裝修工地常用的定線工具」，適用的答案是「墨斗、鉛錘、水平管」。",
+      "isHistorical": false,
+      "year": null,
+      "image": null,
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-105",
+      "number": 105,
+      "localNumber": 29,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "丈量及放樣",
+      "question": "下列何者為室内装修工地常用的丈量放樣工具",
+      "choices": [
+        "三角板",
+        "雷射墨線儀",
+        "直角尺 (曲尺 )",
+        "捲尺"
+      ],
+      "answerIndex": 1,
+      "answerIndices": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "答案重點：此題考施工工具、機具或工序用途。題幹描述的工作是「下列何者為室内装修工地常用的丈量放樣工具」，適用的答案是「雷射墨線儀、直角尺 (曲尺 )、捲尺」。",
+      "isHistorical": false,
+      "year": null,
+      "image": null,
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-106",
+      "number": 106,
+      "localNumber": 30,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "丈量及放樣",
+      "question": "丈量室内裝修工地現場柱、樑尺寸的目的，下列敘述何者正確？",
+      "choices": [
+        "了解建築物結構配置情形",
+        "掌握空間設計的影響因素",
+        "作為分間牆配置的參考依據",
+        "計算拆除數量的依據"
+      ],
+      "answerIndex": 0,
+      "answerIndices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "答案重點：這是複選題；「了解建築物結構配置情形、掌握空間設計的影響因素、作為分間牆配置的參考依據」這些選項共同符合題幹條件。作答時要逐一核對每個選項是否都符合「丈量室内裝修工地現場柱、樑尺寸的目的，下列敘述何者正確」。",
+      "isHistorical": false,
+      "year": null,
+      "image": null,
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-107",
+      "number": 107,
+      "localNumber": 31,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "丈量及放樣",
+      "question": "下列何者常作為室内裝修工地直接測量水平的工具？",
+      "choices": [
+        "水準尺",
+        "鉛錘",
+        "水平管",
+        "雷射水平儀。 12600 建築物室內裝修工程管理乙級"
+      ],
+      "answerIndex": 0,
+      "answerIndices": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "答案重點：此題考施工工具、機具或工序用途。題幹描述的工作是「下列何者常作為室内裝修工地直接測量水平的工具」，適用的答案是「水準尺、水平管、雷射水平儀。 12600 建築物室內裝修工程管理乙級」。",
+      "isHistorical": false,
+      "year": null,
+      "image": null,
+      "needsImage": false
+    },
+    {
       "id": "12600-A12-108",
       "number": 108,
       "localNumber": 1,
@@ -2165,11 +2875,11 @@
       "answerIndices": [
         0
       ],
-      "explanation": "答案重點：此題須配合圖形或符號判讀；官方 A12 題庫給出的對應答案是「一百分之一」。若要複習這題，請對照官方 PDF 的圖例位置一起看。",
+      "explanation": "答案重點：這是否定題，題幹要找不符合、錯誤或不應採用的選項；「一百分之一」才是被排除的項目。",
       "isHistorical": false,
       "year": null,
       "image": null,
-      "needsImage": true
+      "needsImage": false
     },
     {
       "id": "12600-A12-116",
@@ -4085,11 +4795,11 @@
       "answerIndices": [
         2
       ],
-      "explanation": "答案重點：此題須配合圖形或符號判讀；官方 A12 題庫給出的對應答案是「二百分之一」。若要複習這題，請對照官方 PDF 的圖例位置一起看。",
+      "explanation": "答案重點：這是否定題，題幹要找不符合、錯誤或不應採用的選項；「二百分之一」才是被排除的項目。",
       "isHistorical": false,
       "year": null,
       "image": null,
-      "needsImage": true
+      "needsImage": false
     },
     {
       "id": "12600-A12-197",
@@ -4133,11 +4843,11 @@
       "answerIndices": [
         1
       ],
-      "explanation": "答案重點：此題須配合圖形或符號判讀；官方 A12 題庫給出的對應答案是「一百分之一」。若要複習這題，請對照官方 PDF 的圖例位置一起看。",
+      "explanation": "答案重點：這是否定題，題幹要找不符合、錯誤或不應採用的選項；「一百分之一」才是被排除的項目。",
       "isHistorical": false,
       "year": null,
       "image": null,
-      "needsImage": true
+      "needsImage": false
     },
     {
       "id": "12600-A12-199",
@@ -4157,11 +4867,11 @@
       "answerIndices": [
         1
       ],
-      "explanation": "答案重點：此題須配合圖形或符號判讀；官方 A12 題庫給出的對應答案是「一百分之一」。若要複習這題，請對照官方 PDF 的圖例位置一起看。",
+      "explanation": "答案重點：這是否定題，題幹要找不符合、錯誤或不應採用的選項；「一百分之一」才是被排除的項目。",
       "isHistorical": false,
       "year": null,
       "image": null,
-      "needsImage": true
+      "needsImage": false
     },
     {
       "id": "12600-A12-200",
@@ -4181,11 +4891,11 @@
       "answerIndices": [
         1
       ],
-      "explanation": "答案重點：此題須配合圖形或符號判讀；官方 A12 題庫給出的對應答案是「一百分之一」。若要複習這題，請對照官方 PDF 的圖例位置一起看。",
+      "explanation": "答案重點：這是否定題，題幹要找不符合、錯誤或不應採用的選項；「一百分之一」才是被排除的項目。",
       "isHistorical": false,
       "year": null,
       "image": null,
-      "needsImage": true
+      "needsImage": false
     },
     {
       "id": "12600-A12-201",
@@ -4205,11 +4915,11 @@
       "answerIndices": [
         0
       ],
-      "explanation": "答案重點：此題須配合圖形或符號判讀；官方 A12 題庫給出的對應答案是「三十分之一」。若要複習這題，請對照官方 PDF 的圖例位置一起看。",
+      "explanation": "答案重點：這是否定題，題幹要找不符合、錯誤或不應採用的選項；「三十分之一」才是被排除的項目。",
       "isHistorical": false,
       "year": null,
       "image": null,
-      "needsImage": true
+      "needsImage": false
     },
     {
       "id": "12600-A12-202",
@@ -5143,6 +5853,31 @@
       "needsImage": false
     },
     {
+      "id": "12600-A12-240",
+      "number": 240,
+      "localNumber": 133,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "相關法規",
+      "question": "貫穿防火區劃牆壁或樓地板之風管，應在貫穿部位任一側之風管內裝設防火閘門或閘板，其與貫穿部位合成之構造，並應具有",
+      "choices": [
+        "耐燃合板",
+        "不燃材料",
+        "一小時以上之防火時效",
+        "半小時以上之防火時效。 12600 建築物室內裝修工程管理乙級"
+      ],
+      "answerIndex": 1,
+      "answerIndices": [
+        1,
+        2
+      ],
+      "explanation": "答案重點：這是複選題；「不燃材料、一小時以上之防火時效」這些選項共同符合題幹條件。作答時要逐一核對每個選項是否都符合「貫穿防火區劃牆壁或樓地板之風管，應在貫穿部位任一側之風管內裝設防火閘門或閘板，其與貫穿部位合成之構造，並應具有」。",
+      "isHistorical": false,
+      "year": null,
+      "image": null,
+      "needsImage": false
+    },
+    {
       "id": "12600-A12-241",
       "number": 241,
       "localNumber": 1,
@@ -6032,6 +6767,183 @@
       "needsImage": false
     },
     {
+      "id": "12600-A12-278",
+      "number": 278,
+      "localNumber": 38,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "安全維護",
+      "question": "貫穿防火區劃牆壁或樓地板之",
+      "choices": [
+        "電力管線",
+        "通訊管線",
+        "給排水管線",
+        "牆面線，與貫穿部位合成之構造，應具一小時以上之防火時效"
+      ],
+      "answerIndex": 0,
+      "answerIndices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "答案重點：這是複選題；「電力管線、通訊管線、給排水管線」這些選項共同符合題幹條件。作答時要逐一核對每個選項是否都符合「貫穿防火區劃牆壁或樓地板之」。",
+      "isHistorical": false,
+      "year": null,
+      "image": null,
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-279",
+      "number": 279,
+      "localNumber": 39,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "安全維護",
+      "question": "排煙風道 (管)貫穿防煙壁部分之空隙應以",
+      "choices": [
+        "耐燃材料",
+        "耐火板材料",
+        "不燃材料",
+        "水泥砂漿填充"
+      ],
+      "answerIndex": 2,
+      "answerIndices": [
+        2,
+        3
+      ],
+      "explanation": "答案重點：這是複選題；「不燃材料、水泥砂漿填充」這些選項共同符合題幹條件。作答時要逐一核對每個選項是否都符合「排煙風道 (管)貫穿防煙壁部分之空隙應以」。",
+      "isHistorical": false,
+      "year": null,
+      "image": null,
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-280",
+      "number": 280,
+      "localNumber": 40,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "安全維護",
+      "question": "營造用各類物材之儲存、堆積及排列，不得儲存於距",
+      "choices": [
+        "廁所",
+        "庫門",
+        "窗樘",
+        "升降機等二公尺範圍以內"
+      ],
+      "answerIndex": 1,
+      "answerIndices": [
+        1,
+        3
+      ],
+      "explanation": "答案重點：這是複選否定題，題幹要找不符合或錯誤的選項；「庫門、升降機等二公尺範圍以內」是官方 A12 題庫列出的不符合項目。",
+      "isHistorical": false,
+      "year": null,
+      "image": null,
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-281",
+      "number": 281,
+      "localNumber": 41,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "安全維護",
+      "question": "高度二公尺以上工作場所、勞工作業有墜落之虞者，何者不是適當之防止設施",
+      "choices": [
+        "安全帶及安全網",
+        "工作燈",
+        "對講機",
+        "護欄、護蓋"
+      ],
+      "answerIndex": 1,
+      "answerIndices": [
+        1,
+        2
+      ],
+      "explanation": "答案重點：這是複選否定題，題幹要找不符合或錯誤的選項；「工作燈、對講機」是官方 A12 題庫列出的不符合項目。",
+      "isHistorical": false,
+      "year": null,
+      "image": null,
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-282",
+      "number": 282,
+      "localNumber": 42,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "安全維護",
+      "question": "為防止物體飛落，且置於高處之位能超過 12 公斤˙公尺之物件有飛落之虞者，應予以",
+      "choices": [
+        "物件固定之",
+        "使勞工戴用安全帽",
+        "設廣播喇叭",
+        "設照明燈具"
+      ],
+      "answerIndex": 0,
+      "answerIndices": [
+        0,
+        1
+      ],
+      "explanation": "答案重點：此題考工程數量、面積、單位或工料估算。答案「物件固定之、使勞工戴用安全帽」是依題幹條件換算或歸類後的結果。",
+      "isHistorical": false,
+      "year": null,
+      "image": null,
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-283",
+      "number": 283,
+      "localNumber": 43,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "安全維護",
+      "question": "勞工以電銲、氣焊從事熔接、熔斷等作業時，何者為應置備之護具？",
+      "choices": [
+        "安全面罩",
+        "耳塞",
+        "防護眼鏡",
+        "防護手套"
+      ],
+      "answerIndex": 0,
+      "answerIndices": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "答案重點：這是複選題；「安全面罩、防護眼鏡、防護手套」這些選項共同符合題幹條件。作答時要逐一核對每個選項是否都符合「勞工以電銲、氣焊從事熔接、熔斷等作業時，何者為應置備之護具」。",
+      "isHistorical": false,
+      "year": null,
+      "image": null,
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-284",
+      "number": 284,
+      "localNumber": 44,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "安全維護",
+      "question": "使用對地電壓在一百五十伏特以上之移動式電動機具，為防止因漏電而生感電危害，下列敘述哪些可有效預防感電危害？",
+      "choices": [
+        "裝設溼度計",
+        "裝設温度計",
+        "裝設漏電斷路器",
+        "採用接地線連接於接地極。 12600 建築物室內裝修工程管理乙級"
+      ],
+      "answerIndex": 2,
+      "answerIndices": [
+        2,
+        3
+      ],
+      "explanation": "答案重點：此題考施工工具、機具或工序用途。題幹描述的工作是「使用對地電壓在一百五十伏特以上之移動式電動機具，為防止因漏電而生感電危害，下列敘述哪些可有效預防感電危害」，適用的答案是「裝設漏電斷路器、採用接地線連接於接地極。 12600 建築物室內裝修工程管理乙級」。",
+      "isHistorical": false,
+      "year": null,
+      "image": null,
+      "needsImage": false
+    },
+    {
       "id": "12600-A12-285",
       "number": 285,
       "localNumber": 1,
@@ -6529,11 +7441,11 @@
       "answerIndices": [
         1
       ],
-      "explanation": "答案重點：此題須配合圖形或符號判讀；官方 A12 題庫給出的對應答案是「桃形鏝刀」。若要複習這題，請對照官方 PDF 的圖例位置一起看。",
+      "explanation": "答案重點：此題考施工工具、機具或工序用途。題幹描述的工作是「左圖之砌磚工具是」，適用的答案是「桃形鏝刀」。",
       "isHistorical": false,
       "year": null,
-      "image": null,
-      "needsImage": true
+      "image": "assets/questions/12600-A12-305.png",
+      "needsImage": false
     },
     {
       "id": "12600-A12-306",
@@ -7182,6 +8094,82 @@
         3
       ],
       "explanation": "答案重點：這是複選題；「手持式圓盤鋸：以電動馬達或磁力驅動用來進行鋸切加工作業的機械設備、移動式護罩：通常設置在導板平面的下方，防止人員接觸固定式護罩無法保護到的鋸片部份、撐縫片：與鋸片同平面的金屬零件，當鋸片鋸切後防止加工件密合而夾住鋸片，造成圓盤鋸卡住或鋸片破裂」這些選項共同符合題幹條件。作答時要逐一核對每個選項是否都符合「下列圓盤鋸說明哪些是正確」。",
+      "isHistorical": false,
+      "year": null,
+      "image": null,
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-332",
+      "number": 332,
+      "localNumber": 48,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "施工機具",
+      "question": "圓盤鋸之材料、安裝方法、緣盤應符合下列哪些規定？",
+      "choices": [
+        "緣盤之直徑在固定側應小於移動側",
+        "圓鋸軸之夾緊螺栓，應為不可任意旋動者",
+        "使用於緣盤之固定用螺桿、螺帽等施有防鬆措施，以防止制動器制動引起鬆動",
+        "緣盤之直徑在固定側應大於移動側"
+      ],
+      "answerIndex": 1,
+      "answerIndices": [
+        1,
+        2
+      ],
+      "explanation": "答案重點：這是複選題；「圓鋸軸之夾緊螺栓，應為不可任意旋動者、使用於緣盤之固定用螺桿、螺帽等施有防鬆措施，以防止制動器制動引起鬆動」這些選項共同符合題幹條件。作答時要逐一核對每個選項是否都符合「圓盤鋸之材料、安裝方法、緣盤應符合下列哪些規定」。",
+      "isHistorical": false,
+      "year": null,
+      "image": null,
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-333",
+      "number": 333,
+      "localNumber": 49,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "施工機具",
+      "question": "下列圓盤鋸說明哪些是正確？",
+      "choices": [
+        "除了圓盤鋸使用或正常操作時需要的開口之外，圓盤鋸外部的封閉部份不可以有不必要的開口，以避免人員接觸導電部份",
+        "圓盤鋸導板平面下方應裝置固定式護罩；導板平面上方應裝置移動式護罩，以防止人員與鋸片或圓盤鋸的可動件接觸",
+        "將圓盤鋸的集塵系統可拆除部份拆除之後，人員無法經由集塵系統的開口部份接觸到圓盤鋸的可動部位",
+        "圓盤鋸應配置安全護罩裝置，且此安全裝置應使用特定工具時無法拆除"
+      ],
+      "answerIndex": 0,
+      "answerIndices": [
+        0,
+        2
+      ],
+      "explanation": "答案重點：這是複選題；「除了圓盤鋸使用或正常操作時需要的開口之外，圓盤鋸外部的封閉部份不可以有不必要的開口，以避免人員接觸導電部份、將圓盤鋸的集塵系統可拆除部份拆除之後，人員無法經由集塵系統的開口部份接觸到圓盤鋸的可動部位」這些選項共同符合題幹條件。作答時要逐一核對每個選項是否都符合「下列圓盤鋸說明哪些是正確」。",
+      "isHistorical": false,
+      "year": null,
+      "image": null,
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-334",
+      "number": 334,
+      "localNumber": 50,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "施工機具",
+      "question": "木作平頂天花板施工過程中，常用之電動工具有下列哪些？",
+      "choices": [
+        "手提式線鋸機",
+        "手提式電鑽",
+        "手提式圓鋸機",
+        "手提式電銲機。 12600 建築物室內裝修工程管理乙級"
+      ],
+      "answerIndex": 0,
+      "answerIndices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "答案重點：此題考施工工具、機具或工序用途。題幹描述的工作是「木作平頂天花板施工過程中，常用之電動工具有下列哪些」，適用的答案是「手提式線鋸機、手提式電鑽、手提式圓鋸機」。",
       "isHistorical": false,
       "year": null,
       "image": null,
@@ -13806,6 +14794,32 @@
         3
       ],
       "explanation": "答案重點：此題考施工工具、機具或工序用途。題幹描述的工作是「依營建署建築工程施工規範規定，油漆施工前凡須油漆之底材表面，應予以適當之處理並充分乾燥，現場環境下列哪些為正確」，適用的答案是「相對濕度高於 85% 時，不得將油漆塗布於無遮蔽之表面、鋼料之表面因天氣因素，導致塗布之表面凝結水氣時，不得塗布油漆、須依油漆製造廠商對塗布油漆標的物周遭氣溫高低之限制規定」。",
+      "isHistorical": false,
+      "year": null,
+      "image": null,
+      "needsImage": false
+    },
+    {
+      "id": "12600-A12-612",
+      "number": 612,
+      "localNumber": 278,
+      "source": "勞動部技能檢定中心公開學科測試參考資料",
+      "sourceRef": "126002A12.pdf",
+      "chapter": "相關施工作業",
+      "question": "依營建署建築工程施工規範規定，水泥漆施工時，下列哪些為正確？",
+      "choices": [
+        "面漆層之表面於施作前應予清潔，所有油漬、污物、鬆散物及其他雜物均須除去",
+        "施作前混凝土面及水泥粉光面，須刮除隆起及其他突出物",
+        "以合格嵌補材料補平凹洞及裂痕，使其與表面紋理相吻合，俟乾硬後以砂紙磨平",
+        "施工前不必將無須噴塗之部份，予以遮蓋，防止施工之污染。 12600 建築物室內裝修工程管理乙級"
+      ],
+      "answerIndex": 0,
+      "answerIndices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "答案重點：此題考施工工具、機具或工序用途。題幹描述的工作是「依營建署建築工程施工規範規定，水泥漆施工時，下列哪些為正確」，適用的答案是「面漆層之表面於施作前應予清潔，所有油漬、污物、鬆散物及其他雜物均須除去、施作前混凝土面及水泥粉光面，須刮除隆起及其他突出物、以合格嵌補材料補平凹洞及裂痕，使其與表面紋理相吻合，俟乾硬後以砂紙磨平」。",
       "isHistorical": false,
       "year": null,
       "image": null,

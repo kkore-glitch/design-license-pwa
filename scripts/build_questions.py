@@ -31,8 +31,81 @@ IMAGE_PATTERNS = (
     "本立體圖",
     "本圖",
     "下列圖",
-    "圖之",
 )
+
+QUESTION_IMAGES = {
+    question_id: f"assets/questions/{question_id}.png"
+    for question_id in [
+        "12600-A12-001",
+        "12600-A12-004",
+        "12600-A12-005",
+        "12600-A12-006",
+        "12600-A12-008",
+        "12600-A12-011",
+        "12600-A12-012",
+        "12600-A12-013",
+        "12600-A12-014",
+        "12600-A12-015",
+        "12600-A12-017",
+        "12600-A12-018",
+        "12600-A12-019",
+        "12600-A12-020",
+        "12600-A12-022",
+        "12600-A12-030",
+        "12600-A12-031",
+        "12600-A12-032",
+        "12600-A12-033",
+        "12600-A12-043",
+        "12600-A12-044",
+        "12600-A12-045",
+        "12600-A12-048",
+        "12600-A12-051",
+        "12600-A12-052",
+        "12600-A12-053",
+        "12600-A12-054",
+        "12600-A12-055",
+        "12600-A12-056",
+        "12600-A12-057",
+        "12600-A12-058",
+        "12600-A12-059",
+        "12600-A12-060",
+        "12600-A12-061",
+        "12600-A12-062",
+        "12600-A12-063",
+        "12600-A12-064",
+        "12600-A12-065",
+        "12600-A12-067",
+        "12600-A12-068",
+        "12600-A12-069",
+        "12600-A12-070",
+        "12600-A12-079",
+        "12600-A12-095",
+        "12600-A12-305",
+    ]
+}
+
+VISUAL_CHOICES = ["圖中①", "圖中②", "圖中③", "圖中④"]
+
+MANUAL_VISUAL_QUESTIONS = [
+    (1, 43, [2], "本立體圖的正視圖為"),
+    (1, 44, [2], "本立體圖的右側視圖為"),
+    (1, 45, [4], "左圖為已知上圖為俯視圖及下圖為正視圖，請選擇符合正確之右側視圖"),
+    (1, 52, [1, 2, 4], "依 CNS11567 之 A1042 建築圖符號及圖例規定，下列哪些屬於材料、構造圖例？"),
+    (1, 54, [1, 2, 3], "依 CNS11567 之 A1042 建築設備圖表示法規定，下列哪些屬於消防設備符號？"),
+    (1, 57, [2, 4], "依中華民國國家標準 CNS11567 之 A1042 建築設備圖表示法規定，下列哪些符號為電氣設備符號？"),
+    (1, 59, [1, 4], "依中華民國國家標準 CNS11567 之 A1042 建築設備圖表示法規定，下列哪些符號為空調及機械設備圖例？"),
+    (1, 60, [1, 2], "依中華民國國家標準 CNS11567 之 A1042 建築設備圖表示法規定，下列哪些符號為電信、電鈴、電視設備符號？"),
+    (1, 61, [1, 4], "依中華民國國家標準 CNS11567 之 A1042 建築設備圖表示法規定，下列哪些符號為給排水及衛生設備符號？"),
+    (1, 62, [2, 3, 4], "依據 CNS11567-A1042 建築製圖規定，下列哪些為空調及機械設備圖例之符號？"),
+    (1, 63, [1, 3, 4], "依據 CNS11567-A1042 建築製圖規定，下列哪些為電氣設備圖例標準圖例之符號？"),
+    (1, 64, [1, 2, 3], "依據 CNS11567-A1042 建築製圖規定，下列哪些為給排水及衛生設備符號？"),
+    (1, 65, [2, 3, 4], "依據 CNS11567-A1042 建築製圖規定，下列哪些為電信、電鈴、電視設備符號？"),
+    (1, 67, [2, 3, 4], "依據 CNS11567-A1042 建築製圖規定，哪些為空調及機械設備圖例之符號？"),
+    (1, 68, [1, 4], "依據 CNS11567-A1042 建築製圖規定，哪些為電氣設備符號？"),
+    (1, 69, [1, 3], "依據 CNS11567-A1042 建築製圖規定，哪些為電信、電鈴、電視設備符號？"),
+    (1, 70, [1, 2, 4], "依據 CNS11567-A1042 建築製圖規定，哪些為給排水及衛生設備符號？"),
+    (2, 3, [1], "水平管放樣時，管內水面靜止，液面呈曲面狀態，在訂定水面高度時下列何者正確？"),
+]
 
 
 @dataclass
@@ -85,6 +158,8 @@ def compact_choice(text: str, strip_choice_suffix: bool = False) -> str:
 
 
 def needs_image_question(question_text: str) -> bool:
+    if "此符號『" in question_text:
+        return False
     if any(pattern in question_text for pattern in IMAGE_PATTERNS):
         return True
     return bool(re.search(r"(圖例中|符號中|設備圖中|工程之圖說標準中)[，,]?代表$", question_text))
@@ -159,13 +234,15 @@ def parse_question(chapter_index: int, local_number: int, answers: list[int], bo
     if not question_text or len(choices) != 4 or any(not choice for choice in choices):
         return None
 
-    needs_image = needs_image_question(question_text)
     start, _end, chapter = chapter_for_index(chapter_index)
     global_number = start + local_number - 1
+    question_id = f"12600-A12-{global_number:03d}"
+    image = QUESTION_IMAGES.get(question_id)
+    needs_image = needs_image_question(question_text) and image is None
     explanation = build_explanation(question_text, choices, answers, chapter, needs_image)
 
     return Question(
-        id=f"12600-A12-{global_number:03d}",
+        id=question_id,
         number=global_number,
         localNumber=local_number,
         source="勞動部技能檢定中心公開學科測試參考資料",
@@ -178,8 +255,33 @@ def parse_question(chapter_index: int, local_number: int, answers: list[int], bo
         explanation=explanation,
         isHistorical=False,
         year=None,
-        image=None,
+        image=image,
         needsImage=needs_image,
+    )
+
+
+def manual_visual_question(chapter_index: int, local_number: int, answers: list[int], question_text: str) -> Question:
+    start, _end, chapter = chapter_for_index(chapter_index)
+    global_number = start + local_number - 1
+    question_id = f"12600-A12-{global_number:03d}"
+    choices = VISUAL_CHOICES.copy()
+    explanation = build_explanation(question_text, choices, answers, chapter, False)
+    return Question(
+        id=question_id,
+        number=global_number,
+        localNumber=local_number,
+        source="勞動部技能檢定中心公開學科測試參考資料",
+        sourceRef="126002A12.pdf",
+        chapter=chapter,
+        question=question_text,
+        choices=choices,
+        answerIndex=answers[0] - 1,
+        answerIndices=[answer - 1 for answer in answers],
+        explanation=explanation,
+        isHistorical=False,
+        year=None,
+        image=QUESTION_IMAGES[question_id],
+        needsImage=False,
     )
 
 
@@ -194,23 +296,32 @@ def parse_academic_pdf() -> list[Question]:
     question_head = re.compile(r"((?:\d\s*){1,3})\.\s*\(\s*([1-4]{1,4})\s*\)\s*(.+)")
 
     for page in pages:
-        heading = chapter_heading.search(page)
-        if heading:
+        headings = list(chapter_heading.finditer(page))
+        segments: list[tuple[int, str]] = []
+        cursor = 0
+        for heading in headings:
+            if heading.start() > cursor:
+                segments.append((current_chapter, page[cursor : heading.start()]))
             current_chapter = int(heading.group(1))
-            page = page[heading.end() :]
+            cursor = heading.end()
+        segments.append((current_chapter, page[cursor:]))
 
-        chunks = question_start.split(page)
-        for chunk in chunks:
-            match = question_head.match(chunk)
-            if not match:
-                continue
-            local_number = int(re.sub(r"\s+", "", match.group(1)))
-            answers = [int(char) for char in match.group(2)]
-            question = parse_question(current_chapter, local_number, answers, match.group(3))
-            if question:
-                questions.append(question)
+        for chapter_index, segment in segments:
+            chunks = question_start.split(segment)
+            for chunk in chunks:
+                match = question_head.match(chunk)
+                if not match:
+                    continue
+                local_number = int(re.sub(r"\s+", "", match.group(1)))
+                answers = [int(char) for char in match.group(2)]
+                question = parse_question(chapter_index, local_number, answers, match.group(3))
+                if question:
+                    questions.append(question)
 
     by_id = {question.id: question for question in questions}
+    for item in MANUAL_VISUAL_QUESTIONS:
+        question = manual_visual_question(*item)
+        by_id.setdefault(question.id, question)
     return [by_id[key] for key in sorted(by_id, key=lambda item: int(item.rsplit("-", 1)[1]))]
 
 

@@ -1,4 +1,4 @@
-const DATA_URL = "src/data/questions.json?v=20260603-text";
+const DATA_URL = "src/data/questions.json?v=20260603-focus";
 const STORE_KEY = "design-license-pwa-progress-v1";
 const SESSION_KEY = "design-license-pwa-session-v1";
 const THEME_KEY = "design-license-pwa-theme-v1";
@@ -115,6 +115,7 @@ function startSession(mode, questions, title, timed = false) {
   };
   saveSession();
   render();
+  scrollToTop();
 }
 
 function startMock() {
@@ -187,6 +188,7 @@ function goNext() {
   }
   saveSession();
   render();
+  scrollToTop();
 }
 
 function endSession() {
@@ -208,6 +210,10 @@ function markMastered(id) {
   item.streak = Math.max(item.streak, 2);
   saveProgress();
   render();
+}
+
+function scrollToTop() {
+  requestAnimationFrame(() => window.scrollTo({ top: 0, left: 0, behavior: "auto" }));
 }
 
 function visibleQuestions() {
@@ -291,8 +297,10 @@ function nav() {
   `;
 }
 
-function renderShell(content) {
-  app.innerHTML = `${header()}<main class="main">${content}</main>${nav()}`;
+function renderShell(content, options = {}) {
+  const focus = Boolean(options.focus);
+  app.classList.toggle("focus-shell", focus);
+  app.innerHTML = `${focus ? "" : header()}<main class="main ${focus ? "main-focus" : ""}">${content}</main>${focus ? "" : nav()}`;
   bindGlobalEvents();
 }
 
@@ -469,6 +477,10 @@ function renderSession() {
         </div>
         <button class="btn ghost" data-action="end-session">離開</button>
       </div>
+      <div class="session-top-actions">
+        <button class="btn" data-action="toggle-save" data-id="${question.id}">${item.saved ? "取消收藏" : "收藏"}</button>
+        <button class="btn" data-action="mark-mastered" data-id="${question.id}">${item.mastered ? "已掌握" : "標記已掌握"}</button>
+      </div>
       <div class="progress-track"><div class="progress-bar" style="width:${pct}%"></div></div>
       <div class="question-meta">
         <span class="pill">${question.chapter}</span>
@@ -477,6 +489,7 @@ function renderSession() {
         ${session.timeLimitSeconds ? `<span class="pill">剩餘 ${timerLabel(session)}</span>` : ""}
       </div>
       <h2 class="question-text">${escapeHtml(question.question)}</h2>
+      ${question.image ? `<figure class="question-figure"><img src="${escapeHtml(question.image)}" alt="題目圖例" loading="lazy" /></figure>` : ""}
       <div class="choice-grid">
         ${question.choices
           .map((choice, index) => {
@@ -499,15 +512,12 @@ function renderSession() {
       <div class="session-actions">
         ${
           session.submitted
-            ? `<button class="btn" data-action="toggle-save" data-id="${question.id}">${item.saved ? "取消收藏" : "收藏"}</button>
-               <button class="btn" data-action="mark-mastered" data-id="${question.id}">標記已掌握</button>
-               <button class="btn primary" data-action="next-question">${session.index >= session.ids.length - 1 ? "查看結果" : "下一題"}</button>`
-            : `<button class="btn" data-action="toggle-save" data-id="${question.id}">${item.saved ? "取消收藏" : "收藏"}</button>
-               <button class="btn primary" data-action="submit-answer" ${selected.length ? "" : "disabled"}>送出答案</button>`
+            ? `<button class="btn primary" data-action="next-question">${session.index >= session.ids.length - 1 ? "查看結果" : "下一題"}</button>`
+            : `<button class="btn primary" data-action="submit-answer" ${selected.length ? "" : "disabled"}>送出答案</button>`
         }
       </div>
     </section>
-  `);
+  `, { focus: true });
 }
 
 function renderResult() {
@@ -556,13 +566,9 @@ function answerPanel(question, session, result, isMulti) {
     return isMulti ? `<div class="answer-box">這題是複選。請選出所有正確選項後送出。</div>` : "";
   }
   const answerText = question.answerIndices.map((index) => `${CHOICE_LABELS[index]} ${question.choices[index]}`).join("、");
-  const explanation = question.explanation
-    ? `<div class="explanation-block"><span>答案重點</span>${escapeHtml(question.explanation.replace(/^答案重點：/, ""))}</div>`
-    : "";
   return `<div class="answer-box ${result.correct ? "good" : "bad"}">
     <strong>${result.correct ? "作答正確" : "作答錯誤"}</strong>
     <div class="answer-line">正解：${escapeHtml(answerText)}</div>
-    ${explanation}
   </div>`;
 }
 
@@ -671,3 +677,6 @@ fetch(DATA_URL)
   .catch(() => {
     app.innerHTML = `<main class="loading-view"><p class="eyebrow">載入失敗</p><h1>題庫資料無法載入</h1><p>請用本機伺服器或 GitHub Pages 開啟，不要直接用 file://。</p></main>`;
   });
+
+document.addEventListener("gesturestart", (event) => event.preventDefault(), { passive: false });
+document.addEventListener("gesturechange", (event) => event.preventDefault(), { passive: false });

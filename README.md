@@ -5,9 +5,9 @@
 ## 目前內容
 
 - 題庫來源：勞動部技能檢定中心公開學科測試參考資料 `126002A12.pdf`
-- 已匯入題數：668 題
-- 可直接進 80 題模擬測驗：626 題
-- 需看圖題：42 題，保留在題庫瀏覽與章節練習，但不放入 80 題模擬測驗
+- 已匯入題數：708 題
+- 可直接進 80 題模擬測驗：708 題
+- 圖例題：45 題已切入題目畫面，可在模擬測驗與章節練習中作答
 - 支援單選與複選題
 - 本機複習紀錄：作答次數、錯題、收藏、已掌握
 
@@ -33,6 +33,12 @@ http://localhost:8000/
 /Users/kkore/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_questions.py
 ```
 
+重新產生題目圖例：
+
+```bash
+/Users/kkore/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/build_question_images.py
+```
+
 檢查題庫：
 
 ```bash
@@ -52,5 +58,4 @@ http://localhost:8000/
 ## 注意事項
 
 - 複習紀錄只存在同一台手機的瀏覽器本機儲存；換手機或清除瀏覽器資料後會消失。
-- 需看圖題因 PDF 圖形無法完整轉成可作答畫面，第一版不放入 80 題模擬測驗。
-- 解析文字是輔助複習用，正式內容仍以官方公告與考試規定為主。
+- 題目圖例由公開 PDF 切圖而來，正式內容仍以官方公告與考試規定為主。

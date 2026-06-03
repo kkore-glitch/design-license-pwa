@@ -46,12 +46,21 @@ def main() -> None:
     duplicates = [key for key, count in seen.items() if count > 1]
     chapter_counts = Counter(item["chapter"] for item in questions)
     image_count = sum(1 for item in questions if item["needsImage"])
+    image_refs = {item["image"] for item in questions if item.get("image")}
+    image_files = {str(path.relative_to(ROOT)) for path in (ROOT / "assets" / "questions").glob("*.png")}
     sim_ready = sum(1 for item in questions if not item["needsImage"])
     multi_count = sum(1 for item in questions if len(item["answerIndices"]) > 1)
+
+    for image in image_refs:
+        if not (ROOT / image).exists():
+            errors.append(f"missing image file {image}")
+    for image in sorted(image_files - image_refs):
+        errors.append(f"unreferenced image file {image}")
 
     print(f"questionCount={len(questions)}")
     print(f"simulationReady={sim_ready}")
     print(f"needsImage={image_count}")
+    print(f"imageQuestions={len(image_refs)}")
     print(f"multiSelect={multi_count}")
     print("chapterCounts=" + json.dumps(dict(chapter_counts), ensure_ascii=False))
     print(f"duplicateQuestionTexts={len(duplicates)}")
