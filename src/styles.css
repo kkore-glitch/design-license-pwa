@@ -173,6 +173,10 @@ select:focus-visible {
   transform-origin: 50% 24px;
 }
 
+.page-transition.no-motion {
+  animation: none;
+}
+
 @keyframes page-enter {
   from {
     opacity: 0;

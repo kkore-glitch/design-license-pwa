@@ -150,7 +150,7 @@ function toggleChoice(index) {
     session.selected = [...session.selected, index];
   }
   saveSession();
-  render();
+  render({ animate: false });
 }
 
 function submitAnswer() {
@@ -176,7 +176,7 @@ function submitAnswer() {
   session.results[session.index] = { id: question.id, selected: session.selected, correct };
   saveProgress();
   saveSession();
-  render();
+  render({ animate: false });
 }
 
 function goNext() {
@@ -203,7 +203,7 @@ function toggleSaved(id) {
   const item = progressOf(id);
   item.saved = !item.saved;
   saveProgress();
-  render();
+  render({ animate: false });
 }
 
 function markMastered(id) {
@@ -211,7 +211,7 @@ function markMastered(id) {
   item.mastered = true;
   item.streak = Math.max(item.streak, 2);
   saveProgress();
-  render();
+  render({ animate: false });
 }
 
 function scrollToTop() {
@@ -301,8 +301,9 @@ function nav() {
 
 function renderShell(content, options = {}) {
   const focus = Boolean(options.focus);
+  const animate = options.animate !== false;
   app.classList.toggle("focus-shell", focus);
-  app.innerHTML = `${focus ? "" : header()}<main class="main ${focus ? "main-focus" : ""}"><div class="page-transition">${content}</div></main>${focus ? "" : nav()}`;
+  app.innerHTML = `${focus ? "" : header()}<main class="main ${focus ? "main-focus" : ""}"><div class="page-transition ${animate ? "" : "no-motion"}">${content}</div></main>${focus ? "" : nav()}`;
   bindGlobalEvents();
 }
 
@@ -461,7 +462,7 @@ function renderProgress() {
   `);
 }
 
-function renderSession() {
+function renderSession(options = {}) {
   const session = state.session;
   if (session.finishedAt) return renderResult();
   const question = byId(session.ids[session.index]);
@@ -520,7 +521,7 @@ function renderSession() {
         }
       </div>
     </section>
-  `, { focus: true });
+  `, { focus: true, animate: options.animate });
 }
 
 function renderResult() {
@@ -650,8 +651,8 @@ function bindGlobalEvents() {
   }
 }
 
-function render() {
-  if (state.session) return renderSession();
+function render(options = {}) {
+  if (state.session) return renderSession(options);
   if (state.view === "bank") return renderBank();
   if (state.view === "wrong") return renderWrong();
   if (state.view === "saved") return renderSaved();
@@ -674,7 +675,7 @@ fetch(DATA_URL)
         .catch(() => {});
     }
     setInterval(() => {
-      if (state.session?.timeLimitSeconds && !state.session.finishedAt) render();
+      if (state.session?.timeLimitSeconds && !state.session.finishedAt) render({ animate: false });
     }, 30000);
   })
   .catch(() => {
