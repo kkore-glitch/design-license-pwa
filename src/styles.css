@@ -13,6 +13,9 @@
   --good: #2f7658;
   --bad: #a33c32;
   --blue: #315f78;
+  --multi-bg: color-mix(in srgb, var(--bad) 8%, var(--panel));
+  --multi-bg-strong: color-mix(in srgb, var(--bad) 13%, var(--panel));
+  --multi-line: color-mix(in srgb, var(--bad) 38%, var(--line));
   --topbar-bg: rgba(247, 244, 234, 0.9);
   --bottom-bg: rgba(255, 255, 255, 0.92);
   --shadow: 0 18px 48px rgba(36, 48, 43, 0.12);
@@ -35,6 +38,9 @@
   --good: #7bc29e;
   --bad: #e07f72;
   --blue: #8fb8cc;
+  --multi-bg: color-mix(in srgb, var(--bad) 12%, var(--panel));
+  --multi-bg-strong: color-mix(in srgb, var(--bad) 18%, var(--panel));
+  --multi-line: color-mix(in srgb, var(--bad) 46%, var(--line));
   --topbar-bg: rgba(20, 25, 21, 0.9);
   --bottom-bg: rgba(28, 35, 31, 0.93);
   --shadow: 0 18px 54px rgba(0, 0, 0, 0.34);
@@ -160,6 +166,40 @@ select:focus-visible {
   max-width: 760px;
   min-height: 100vh;
   padding: calc(10px + env(safe-area-inset-top)) 12px calc(14px + env(safe-area-inset-bottom));
+}
+
+.page-transition {
+  animation: page-enter 180ms ease-out both;
+  transform-origin: 50% 24px;
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(6px) scale(0.992);
+    filter: saturate(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: saturate(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-transition {
+    animation: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }
 
 .loading-view {
@@ -406,8 +446,13 @@ select:focus-visible {
 }
 
 .question-line mark.multi-mark {
-  background: color-mix(in srgb, var(--bad) 14%, var(--panel));
+  background: var(--multi-bg-strong);
   color: var(--bad);
+}
+
+.question-line.multi-line {
+  border-color: var(--multi-line);
+  background: linear-gradient(180deg, var(--multi-bg), color-mix(in srgb, var(--multi-bg) 78%, var(--panel)));
 }
 
 .session-card {
@@ -415,10 +460,11 @@ select:focus-visible {
 }
 
 .session-card.multi-session {
-  border-color: color-mix(in srgb, var(--bad) 36%, var(--line));
-  background:
-    linear-gradient(180deg, color-mix(in srgb, var(--bad) 7%, var(--panel)), var(--panel) 42%),
-    var(--panel);
+  border-color: var(--multi-line);
+  background: linear-gradient(180deg, var(--multi-bg-strong), var(--multi-bg));
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, var(--bad) 9%, transparent),
+    var(--shadow);
 }
 
 .session-head {
@@ -468,7 +514,7 @@ select:focus-visible {
 
 .pill.multi-pill {
   border-color: color-mix(in srgb, var(--bad) 52%, var(--line));
-  background: color-mix(in srgb, var(--bad) 14%, var(--panel));
+  background: var(--multi-bg-strong);
   color: var(--bad);
   font-weight: 950;
 }

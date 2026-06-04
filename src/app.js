@@ -302,7 +302,7 @@ function nav() {
 function renderShell(content, options = {}) {
   const focus = Boolean(options.focus);
   app.classList.toggle("focus-shell", focus);
-  app.innerHTML = `${focus ? "" : header()}<main class="main ${focus ? "main-focus" : ""}">${content}</main>${focus ? "" : nav()}`;
+  app.innerHTML = `${focus ? "" : header()}<main class="main ${focus ? "main-focus" : ""}"><div class="page-transition">${content}</div></main>${focus ? "" : nav()}`;
   bindGlobalEvents();
 }
 
@@ -386,15 +386,16 @@ function renderBank() {
 
 function questionLine(question) {
   const item = state.progress[question.id] || {};
+  const isMulti = question.answerIndices.length > 1;
   const labels = [
     question.needsImage ? "<mark>需看圖</mark>" : "",
-    question.answerIndices.length > 1 ? `<mark class="multi-mark">複選</mark>` : "",
+    isMulti ? `<mark class="multi-mark">複選</mark>` : "",
     item.saved ? "<mark>收藏</mark>" : "",
     item.mastered ? "<mark>已掌握</mark>" : ""
   ]
     .filter(Boolean)
     .join(" ");
-  return `<button class="question-line" data-open-question="${question.id}">
+  return `<button class="question-line ${isMulti ? "multi-line" : ""}" data-open-question="${question.id}">
     <span><strong>${question.number}. ${escapeHtml(question.question)}</strong><span>${question.chapter} ${labels}</span></span>
   </button>`;
 }
