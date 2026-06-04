@@ -169,25 +169,25 @@ select:focus-visible {
 }
 
 .page-transition {
-  animation: page-enter 180ms ease-out both;
+  animation: page-enter 160ms ease-out both;
   transform-origin: 50% 24px;
 }
 
 .page-transition.no-motion {
   animation: none;
+  opacity: 1;
+  transform: none;
 }
 
 @keyframes page-enter {
   from {
     opacity: 0;
-    transform: translateY(6px) scale(0.992);
-    filter: saturate(0.96);
+    transform: translateY(2px);
   }
 
   to {
     opacity: 1;
-    transform: translateY(0) scale(1);
-    filter: saturate(1);
+    transform: translateY(0);
   }
 }
 
@@ -336,7 +336,6 @@ select:focus-visible {
 }
 
 .btn:not(:disabled):active,
-.choice:not(:disabled):active,
 .chapter-row:active,
 .question-line:active,
 .nav-btn:active {
@@ -566,7 +565,7 @@ select:focus-visible {
   text-align: left;
   cursor: pointer;
   line-height: 1.45;
-  transition: border-color 140ms ease, background 140ms ease, transform 140ms ease;
+  transition: border-color 140ms ease, background 140ms ease;
 }
 
 .choice .badge {

@@ -150,7 +150,17 @@ function toggleChoice(index) {
     session.selected = [...session.selected, index];
   }
   saveSession();
-  render({ animate: false });
+  updateChoiceSelection();
+}
+
+function updateChoiceSelection() {
+  const session = state.session;
+  if (!session) return;
+  document.querySelectorAll("[data-choice]").forEach((button) => {
+    button.classList.toggle("selected", session.selected.includes(Number(button.dataset.choice)));
+  });
+  const submit = document.querySelector('[data-action="submit-answer"]');
+  if (submit) submit.disabled = session.selected.length === 0;
 }
 
 function submitAnswer() {
