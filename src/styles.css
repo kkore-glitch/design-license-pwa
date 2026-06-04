@@ -402,10 +402,23 @@ select:focus-visible {
   background: var(--accent-soft);
   color: var(--accent-dark);
   font-size: 12px;
+  font-weight: 900;
+}
+
+.question-line mark.multi-mark {
+  background: color-mix(in srgb, var(--bad) 14%, var(--panel));
+  color: var(--bad);
 }
 
 .session-card {
   padding: 14px;
+}
+
+.session-card.multi-session {
+  border-color: color-mix(in srgb, var(--bad) 36%, var(--line));
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--bad) 7%, var(--panel)), var(--panel) 42%),
+    var(--panel);
 }
 
 .session-head {
@@ -451,6 +464,13 @@ select:focus-visible {
   color: var(--muted);
   font-size: 12px;
   font-weight: 800;
+}
+
+.pill.multi-pill {
+  border-color: color-mix(in srgb, var(--bad) 52%, var(--line));
+  background: color-mix(in srgb, var(--bad) 14%, var(--panel));
+  color: var(--bad);
+  font-weight: 950;
 }
 
 .question-text {

@@ -388,7 +388,7 @@ function questionLine(question) {
   const item = state.progress[question.id] || {};
   const labels = [
     question.needsImage ? "<mark>需看圖</mark>" : "",
-    question.answerIndices.length > 1 ? "<mark>複選</mark>" : "",
+    question.answerIndices.length > 1 ? `<mark class="multi-mark">複選</mark>` : "",
     item.saved ? "<mark>收藏</mark>" : "",
     item.mastered ? "<mark>已掌握</mark>" : ""
   ]
@@ -471,7 +471,7 @@ function renderSession() {
   const result = session.results[session.index];
 
   renderShell(`
-    <section class="panel session-card">
+    <section class="panel session-card ${isMulti ? "multi-session" : ""}">
       <div class="session-head">
         <div>
           <p class="eyebrow">${session.title}</p>
@@ -486,7 +486,7 @@ function renderSession() {
       <div class="progress-track"><div class="progress-bar" style="width:${pct}%"></div></div>
       <div class="question-meta">
         <span class="pill">${question.chapter}</span>
-        <span class="pill">${isMulti ? "複選題" : "單選題"}</span>
+        <span class="pill ${isMulti ? "multi-pill" : ""}">${isMulti ? "複選題" : "單選題"}</span>
         ${question.needsImage ? `<span class="pill">需看圖，未放入模擬測驗</span>` : ""}
         ${session.timeLimitSeconds ? `<span class="pill">剩餘 ${timerLabel(session)}</span>` : ""}
       </div>

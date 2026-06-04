@@ -1,4 +1,4 @@
-const CACHE_NAME = "design-license-pwa-v8";
+const CACHE_NAME = "design-license-pwa-v9";
 const QUESTION_IMAGE_VERSION = "20260603-figfix";
 const QUESTION_IMAGE_ASSETS = [
   "./assets/questions/12600-A12-001.png",
@@ -53,8 +53,8 @@ const ASSETS = [
   "./index.html",
   "./manifest.webmanifest",
   "./assets/icon.svg",
-  "./src/styles.css?v=20260603-focus",
-  "./src/app.js?v=20260603-figfix",
+  "./src/styles.css?v=20260604-multi",
+  "./src/app.js?v=20260604-multi",
   "./src/data/questions.json?v=20260603-focus"
 ].concat(QUESTION_IMAGE_ASSETS);
 
