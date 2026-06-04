@@ -13,16 +13,10 @@ def book_mask(size: tuple[int, int]) -> Image.Image:
     width, height = size
     # The mask follows the book mockup outline and preserves all white artwork
     # printed on the cover. It only removes the outside page background.
-    points = [
+    book_points = [
         (0.012, 0.024),
         (0.086, 0.004),
         (0.558, 0.026),
-        (0.510, 0.135),
-        (0.560, 0.188),
-        (0.710, 0.193),
-        (0.708, 0.224),
-        (0.922, 0.195),
-        (0.962, 0.139),
         (0.922, 0.040),
         (0.999, 0.045),
         (0.999, 0.962),
@@ -30,9 +24,23 @@ def book_mask(size: tuple[int, int]) -> Image.Image:
         (0.000, 0.962),
         (0.000, 0.030),
     ]
-    scaled = [(round(x * width), round(y * height)) for x, y in points]
+    bubble_points = [
+        (0.552, 0.040),
+        (0.920, 0.056),
+        (0.958, 0.138),
+        (0.881, 0.238),
+        (0.718, 0.258),
+        (0.705, 0.304),
+        (0.642, 0.265),
+        (0.573, 0.258),
+        (0.520, 0.150),
+        (0.508, 0.104),
+    ]
     mask = Image.new("L", size, 0)
-    ImageDraw.Draw(mask).polygon(scaled, fill=255)
+    draw = ImageDraw.Draw(mask)
+    for points in (book_points, bubble_points):
+        scaled = [(round(x * width), round(y * height)) for x, y in points]
+        draw.polygon(scaled, fill=255)
     return mask.filter(ImageFilter.GaussianBlur(0.7))
 
 

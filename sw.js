@@ -1,4 +1,4 @@
-const CACHE_NAME = "design-license-pwa-v10";
+const CACHE_NAME = "design-license-pwa-v11";
 const QUESTION_IMAGE_VERSION = "20260603-figfix";
 const QUESTION_IMAGE_ASSETS = [
   "./assets/questions/12600-A12-001.png",
@@ -52,10 +52,10 @@ const ASSETS = [
   "./",
   "./index.html",
   "./manifest.webmanifest",
-  "./assets/icon-192.png?v=20260604-book",
-  "./assets/icon-512.png?v=20260604-book",
-  "./assets/icon-maskable-512.png?v=20260604-book",
-  "./assets/apple-touch-icon.png?v=20260604-book",
+  "./assets/icon-192.png?v=20260604-book2",
+  "./assets/icon-512.png?v=20260604-book2",
+  "./assets/icon-maskable-512.png?v=20260604-book2",
+  "./assets/apple-touch-icon.png?v=20260604-book2",
   "./src/styles.css?v=20260604-multi",
   "./src/app.js?v=20260604-multi",
   "./src/data/questions.json?v=20260603-focus"
